@@ -27,29 +27,7 @@ node* insert(node* root,int a){
     }
     return root;
 }
-void print(node* root){
-    if(root==NULL){
-        cout<<"Tree is empty"<<endl;
-        return ;
-    }
-    queue<node*> q;
-    q.push(root);
-    while(!q.empty()){
-        node* curr = q.front();
-    cout<<curr->data<<" ";
-        if(curr->left!=NULL){
-            q.push(curr->left);
-            
-        }
-        if(curr->right!=NULL){
-            q.push(curr->right);
-        }
-            
-        q.pop();
-        
-        
-    }
-}
+
 int main(){
     node* root = NULL;
     root=insert(root,3);
